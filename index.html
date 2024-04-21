@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Photography Website</title>
+    <style>
+        body {
+            background-color: purple;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            margin: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figcaption {
+            text-align: center;
+        }
+
+        footer {
+            background-color: purple;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .social-media-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media-links li {
+            margin-right: 10px;
+        }
+
+        .social-media-links li img {
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <figure>
+                <img src="image1.jpg" alt="Landscape Image 1">
+                <figcaption>Caption for Image 1</figcaption>
+            </figure>
+            <!-- Repeat the above figure element for the remaining images -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Your Blog Photography</p>
+            <p>Contact: contact@yourblogphotography.com</p>
+            <ul class="social-media-links">
+                <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
